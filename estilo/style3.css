@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* MENU COMIENZA */
+nav {
+  background: #686868;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+
+/* MENU TERMINA */
+
+/* IMAGEN COMIENZA */
+.img_car {
+  background: url("../imagenes/img3.jpg") no-repeat;
+}
+
+.tienda {
+  background: url("../imagenes/tienda.jpg") no-repeat;
+}
+
+/* Contacto */
+
+.mail_seccion {
+  width: 100%;
+  float: left;
+  height: auto;
+  padding: 23px 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Termina Contacto*/
+
+/*  CENTER COMIENZA */
+.center {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  text-align: center;
+}
+
+.center .title {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+/* CENTER TERMINA */
