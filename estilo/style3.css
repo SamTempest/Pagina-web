@@ -8,10 +8,32 @@
 
 /* MENU COMIENZA */
 nav {
-  background: #686868;
+  background: #474747;
   width: 100%;
   padding: 10px 0;
   z-index: 12;
+}
+
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.menu ul {
+  display: inline-flex;
+}
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 15px;
 }
 
 /* MENU TERMINA */
@@ -25,6 +47,60 @@ nav {
   background: url("../imagenes/tienda.jpg") no-repeat;
 }
 
+.servicios {
+  background: url("../imagenes/servicios.jpg") no-repeat;
+}
+
+.contacto {
+  background: url("../imagenes/contacto.jpg") no-repeat;
+}
+
+.img_car,
+.tienda,
+.servicios,
+.contacto {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* IMAGEN TERMINA */
+
+/* VIDEO COMIENZA */
+
+.inter-tittle,
+.title_outer,
+.about_us {
+  text-align: left;
+  margin: 35px;
+}
+
+.inter-tittle {
+  font-size: 16px;
+  color: #f76d37;
+  text-transform: uppercase;
+}
+
+/*  Servicios */
+
+.descripcion_texto {
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: #2b3436;
+  font-size: 20px;
+  margin-left: 0px;
+}
+
+.images_2 {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+/* Termina Servicios */
+
 /* Contacto */
 
 .mail_seccion {
@@ -34,6 +110,29 @@ nav {
   padding: 23px 70px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.email-bt {
+  color: #080707;
+  width: 100%;
+  margin: 10px;
+  border-width: 1px;
+  border-radius: 30px;
+}
+
+.mensaje-bt {
+  color: #080707;
+  width: 100%;
+  height: 150px;
+  font-size: 20px;
+  padding: 40px;
+  border-radius: 50px;
+}
+
+.enviar_btn {
+  width: 170px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Termina Contacto*/
@@ -54,4 +153,31 @@ nav {
   font-weight: 600;
 }
 
+.center {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
 /* CENTER TERMINA */
+
+/* BTNS COMIENZA */
+
+.center .btns {
+  margin-top: 20px;
+}
+
+.center .btns button {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* BTNS TERMINA */

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
+    <link rel="icon" href="imagenes/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="estilo/style3.css" />
 
     <!-- Multimedia sin derechos de autor
@@ -15,9 +16,12 @@
   <body>
     <!--BARRA DE NAVEGACION -->
     <nav>
+      <!-- <nav> define un conjunto de enlaces de navegación -->
       <div class="menu">
+        <!-- <div> etiqueta que define una división o una sección en un documento HTML. -->
         <div class="logo"></div>
         <ul>
+          <!-- la etiqueta <ul> define una lista desordenada (con viñetas) -->
           <li><a href="index.html">Inicio</a></li>
           <li><a href="acerca_de.html">Acerca de</a></li>
           <li><a href="servicios.html">Servicios</a></li>
@@ -33,19 +37,35 @@
 
     <!-- CENTER -->
     <div class="center">
-      <div class="sub_title" style="color: black">Aviso</div>
+      <div class="sub_title">Contacto</div>
     </div>
 
     <br />
     <br />
 
+    <h5 class="inter-tittle">Contacto</h5>
+
     <div class="mail_seccion">
       <div class="email_texto">
         <div class="form-group">
-          <input type="text" placeholder="Nombre" name="Email" />
+          <input
+            type="text"
+            class="email-bt"
+            placeholder="Nombre"
+            name="Email"
+          />
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Email" name="Email" />
+          <input
+            type="text"
+            class="email-bt"
+            placeholder="Email"
+            name="Email"
+          />
+        </div>
+
+        <div class="enviar_btn">
+          <button class="enviar_form">Enviar</button>
         </div>
       </div>
     </div>
