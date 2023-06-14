@@ -19,7 +19,10 @@
       <!-- <nav> define un conjunto de enlaces de navegación -->
       <div class="menu">
         <!-- <div> etiqueta que define una división o una sección en un documento HTML. -->
-        <div class="logo"></div>
+        <div class="logo">
+          <a href="#">M/M</a>
+          <!-- <a> es una etiqueta que define un hipervínculo, que se utiliza para enlazar de una página a otra -->
+        </div>
         <ul>
           <!-- la etiqueta <ul> define una lista desordenada (con viñetas) -->
           <li><a href="index.html">Inicio</a></li>
@@ -44,6 +47,8 @@
     <br />
 
     <h5 class="inter-tittle">Contacto</h5>
+    <h1 class="title_outer">informaci&oacute;n</h1>
+    <!-- Las etiquetas <h1> a <h6> se utilizan para definir encabezados HTML. -->
 
     <div class="mail_seccion">
       <div class="email_texto">
@@ -54,6 +59,7 @@
             placeholder="Nombre"
             name="Email"
           />
+          <!-- La etiqueta <input> especifica un campo de entrada donde el usuario puede ingresar datos. -->
         </div>
         <div class="form-group">
           <input
@@ -63,7 +69,23 @@
             name="Email"
           />
         </div>
-
+        <div class="form-group">
+          <input
+            type="text"
+            class="email-bt"
+            placeholder="Tel&eacute;fono"
+            name="Email"
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            class="mensaje-bt"
+            placeholder="Mensaje"
+            rows="5"
+            id="comment"
+            name="Mensaje"
+          ></textarea>
+        </div>
         <div class="enviar_btn">
           <button class="enviar_form">Enviar</button>
         </div>
