@@ -5,49 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mérida Motors</title>
     <link rel="icon" href="imagenes/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="estilo/style3.css" />
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="estilo/style3.css" rel="stylesheet" />
 
     <!-- Multimedia sin derechos de autor
       imagenes: https://unsplash.com/es/fotos/3ZUsNJhi_Ik 
                 https://unsplash.com/es/fotos/nYdD0pb4HZc
       video:    https://www.pexels.com/es-es/video/pareja-coche-vehiculo-adentro-7154209/ 
       -->
+    <style>
+      .navbar-brand {
+        text-decoration: none;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+      }
+      .px-3 {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .px-3 .title {
+        color: #fff;
+        font-size: 55px;
+        font-weight: 600;
+      }
+
+      .px-3 .title,
+      .px-3 .sub_title {
+        font-size: calc(1.525rem + 1.8vw);
+      }
+
+      .px-3,
+      .sub_title {
+        color: #fff;
+        font-size: 52px;
+        font-weight: 600;
+      }
+
+      .px-3 .btns {
+        margin-top: 20px;
+      }
+
+      .px-3 .btns button {
+        height: 55px;
+        width: 170px;
+        border-radius: 5px;
+        border: none;
+        margin: 0 10px;
+        border: 2px solid white;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0 10px;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .px-3 .btns .conoce {
+        color: white;
+        background: none;
+      }
+
+      .btns .conoce:hover {
+        background: #e7810d;
+        color: rgb(252, 252, 252);
+      }
+
+      .px-3 .btns .sub {
+        background: white;
+        color: black;
+      }
+
+      .btn-light,
+      .btn-light:hover,
+      .btn-light:focus {
+        color: #333;
+        text-shadow: none; /* Prevent inheritance from `body` */
+      }
+
+      .img-dealer {
+        text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0 20rem 100rem rgba(0, 0, 0, 0.5);
+        background: url("../imagenes/img3.jpg") no-repeat center;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .cover-container {
+        max-width: 42em;
+      }
+    </style>
   </head>
-  <body>
+  <body class="img-dealer">
     <!--BARRA DE NAVEGACION -->
-    <nav>
-      <!-- <nav> define un conjunto de enlaces de navegación -->
-      <div class="menu">
-        <!-- <div> etiqueta que define una división o una sección en un documento HTML. -->
-        <div class="logo">
-          <a href="#">M/M</a>
-          <!-- <a> es una etiqueta que define un hipervínculo, que se utiliza para enlazar de una página a otra -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">M/M</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarCollapse">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-3 justify-content-lg-center"></div>
+
+          <ul class="navbar-nav col-lg-6 justify-content-lg-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acerca_de.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <!-- la etiqueta <ul> define una lista desordenada (con viñetas) -->
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="acerca_de.html">Acerca de</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
       </div>
     </nav>
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto"></header>
+
+      <main class="px-3">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="title">Mérida Motors</h1>
+          </div>
+        </div>
+
+        <div class="sub_title">El nuevo auto es eléctrico</div>
+        <p class="btns">
+          <button class="conoce">Conoce más...</button>
+          <button class="cub">Suscribirse</button>
+        </p>
+      </main>
+
+      <footer class="mt-auto"></footer>
+    </div>
     <!--BARRA DE NAVEGACION -->
 
-    <!-- IMG -->
-    <div class="img_car" id="section"></div>
-    <!-- IMG -->
+    <!-- <div class="img_car" id="section"></div>
 
-    <!-- CENTER -->
     <div class="center">
       <div class="title">Mérida Motors</div>
       <div class="sub_title">El nuevo auto es eléctrico</div>
       <div class="btns">
         <button class="conoce">Conoce más...</button>
-        <!-- La etiqueta <button> define un botón en el que se puede hacer clic -->
         <button class="cub">Suscribirse</button>
       </div>
-    </div>
+    </div> -->
+
     <!-- CENTER -->
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
