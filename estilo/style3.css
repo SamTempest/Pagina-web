@@ -24,6 +24,57 @@ nav .menu {
   font-size: 25px;
   font-weight: 600;
 }
+
+.menu .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.menu ul {
+  display: inline-flex;
+}
+.menu ul li {
+  list-style: none;
+  margin-left: 7px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+/* .menu ul li a:hover {
+  background: #e7810d;
+  color: rgb(255, 255, 255);
+} */
+
+.menu ul li a:hover {
+  box-shadow: inset 0 1.5em 0em 0em #e7810d, inset 0 -1.5em 0em 0em #e7810d;
+  border-color: #e7810d;
+  color: #fff;
+}
+
+/* MENU TERMINA */
+.acerca-texto {
+  color: #2b2a2a;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.espacio-entre {
+  color: #2b2a2a;
+  background-color: white;
+  padding: 20px 80px;
+}
+
 .px-3 {
   position: absolute;
   top: 52%;
@@ -72,11 +123,13 @@ nav .menu {
 .px-3 .btns .conoce {
   color: white;
   background: none;
+  transition: all 0.5s;
 }
 
 .btns .conoce:hover {
-  background: #e7810d;
-  color: rgb(252, 252, 252);
+  box-shadow: inset 5em 0 0 0 #dd7e2a, inset -5em 0 0 0 #dd7e2a;
+  border-color: #dd7e2a;
+  color: #fff;
 }
 
 .px-3 .btns .sub {
@@ -120,36 +173,86 @@ nav .menu {
 
 /* IMAGEN TERMINA */
 
-.menu .logo a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
+/*COMIENZA CARRUSEL*/
+
+.carousel {
+  margin-bottom: 4rem;
 }
 
-.menu ul {
-  display: inline-flex;
-}
-.menu ul li {
-  list-style: none;
-  margin-left: 7px;
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
 }
 
-.menu ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-.menu ul li a:hover {
-  background: #e7810d;
-  color: rgb(255, 255, 255);
+.carousel-item {
+  height: 32rem;
 }
 
-/* MENU TERMINA */
+/* RESPONSIVE CSS */
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+.img-carrusel1 {
+  background: url("../imagenes/service1.jpg") no-repeat;
+}
+
+.img-carrusel2 {
+  background: url("../imagenes/service2.jpg") no-repeat;
+}
+
+.img-carrusel3 {
+  background: url("../imagenes/service3.jpg") no-repeat;
+}
+
+.img-carrusel1,
+.img-carrusel2,
+.img-carrusel3 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/*TERMINA CARRUSEL*/
+
+/*COMIENZA PARALLAX*/
+
+.bgimg-2 {
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-2 {
+  background-image: url("../imagenes/parallax.jpg");
+  min-height: 400px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-2 {
+    background-attachment: scroll;
+  }
+}
+/*TERMINA PARALLAX*/
 
 /* VIDEO COMIENZA */
 
@@ -253,14 +356,58 @@ nav .menu {
 }
 
 .enviar_form {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 16px;
+  height: 55px;
+  width: 170px;
+  border-radius: 20px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid rgb(252, 252, 252);
+  background-color: #f76d27;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
   color: #ffffff;
-  background-color: #d33a11;
-  padding: 15px 50px 12px 50px;
-  border-radius: 30px;
-  display: block;
 }
+
+.enviar_form:hover {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
 /* Termina Contacto*/
