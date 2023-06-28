@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +8,6 @@
 }
 
 /* MENU COMIENZA */
-nav {
-  position: fixed;
-  background: #1b1b1b;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 12;
-}
 
 nav .menu {
   max-width: 1250px;
@@ -23,7 +17,109 @@ nav .menu {
   justify-content: space-between;
   padding: 0 20px;
 }
-/******************************************************/
+
+.navbar-brand {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.px-3 {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  text-align: center;
+}
+
+.px-3 .title {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.px-3 .title,
+.px-3 .sub_title {
+  font-size: calc(1.525rem + 1.8vw);
+}
+
+.px-3,
+.sub_title {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.px-3 .btns {
+  margin-top: 20px;
+}
+
+.px-3 .btns button {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.px-3 .btns .conoce {
+  color: white;
+  background: none;
+}
+
+.btns .conoce:hover {
+  background: #e7810d;
+  color: rgb(252, 252, 252);
+}
+
+.px-3 .btns .sub {
+  background: white;
+  color: black;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+/* IMAGEN COMIENZA */
+.img-landing {
+  background: url("../imagenes/img3.jpg") no-repeat;
+}
+
+.img-acerca {
+  background: url("../imagenes/tienda.jpg") no-repeat;
+}
+
+.img-servicios {
+  background: url("../imagenes/servicios.jpg") no-repeat;
+}
+
+.img-contacto {
+  background: url("../imagenes/contacto2.jpg") no-repeat;
+}
+
+.img-landing,
+.img-acerca,
+.img-servicios,
+.img-contacto {
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 30rem 100rem rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* IMAGEN TERMINA */
+
 .menu .logo a {
   text-decoration: none;
   color: #fff;
@@ -55,46 +151,6 @@ nav .menu {
 
 /* MENU TERMINA */
 
-/* IMAGEN COMIENZA */
-.img_car {
-  background: url("../imagenes/img3.jpg") no-repeat;
-}
-
-.tienda {
-  background: url("../imagenes/tienda.jpg") no-repeat;
-}
-
-.servicios {
-  background: url("../imagenes/servicios.jpg") no-repeat;
-}
-
-.contacto {
-  background: url("../imagenes/contacto.jpg") no-repeat;
-}
-
-.img_car,
-.tienda,
-.servicios,
-.contacto {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.img_car::before,
-.tienda::before,
-.servicios::before,
-.contacto::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-/* IMAGEN TERMINA */
-
 /* VIDEO COMIENZA */
 
 .inter-tittle,
@@ -122,10 +178,6 @@ nav .menu {
 }
 
 /*  Servicios */
-.linea {
-  display: -ms-flexbox;
-  display: flex;
-}
 
 .carro_main {
   width: 100%;
@@ -173,21 +225,6 @@ nav .menu {
 
 /* Contacto */
 
-.mail_seccion {
-  width: 100%;
-  float: left;
-  height: auto;
-  padding: 23px 70px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.email_texto {
-  width: 100%;
-  float: left;
-  margin-top: 20px;
-}
-
 .email-bt {
   color: #080707;
   width: 100%;
@@ -227,63 +264,3 @@ nav .menu {
   display: block;
 }
 /* Termina Contacto*/
-
-/*  CENTER COMIENZA */
-.center {
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0 20px;
-  text-align: center;
-}
-
-.center .title {
-  color: #fff;
-  font-size: 55px;
-  font-weight: 600;
-}
-
-.center,
-.sub_title {
-  color: #fff;
-  font-size: 52px;
-  font-weight: 600;
-}
-/* CENTER TERMINA */
-
-/* BTNS COMIENZA */
-
-.center .btns {
-  margin-top: 20px;
-}
-
-.center .btns button {
-  height: 55px;
-  width: 170px;
-  border-radius: 5px;
-  border: none;
-  margin: 0 10px;
-  border: 2px solid white;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 0 10px;
-  cursor: pointer;
-  outline: none;
-}
-
-.center .btns .conoce {
-  color: white;
-  background: none;
-}
-
-.btns .conoce:hover {
-  background: #e7810d;
-  color: rgb(252, 252, 252);
-}
-
-.center .btns .sub {
-  background: white;
-  color: black;
-}
-/* BTNS TERMINA */
