@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
+    <title>Servicios</title>
     <link rel="icon" href="imagenes/icon.png" type="image/x-icon" />
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="estilo/style3.css" />
 
     <!-- Multimedia sin derechos de autor
@@ -13,86 +14,127 @@
       video:    https://www.pexels.com/es-es/video/pareja-coche-vehiculo-adentro-7154209/ 
       -->
   </head>
-  <body>
+  <body class="img-contacto">
     <!--BARRA DE NAVEGACION -->
-    <nav>
-      <!-- <nav> define un conjunto de enlaces de navegación -->
-      <div class="menu">
-        <!-- <div> etiqueta que define una división o una sección en un documento HTML. -->
-        <div class="logo">
-          <a href="#">M/M</a>
-          <!-- <a> es una etiqueta que define un hipervínculo, que se utiliza para enlazar de una página a otra -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">M/M</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarCollapse">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-3 justify-content-lg-center"></div>
+
+          <ul class="navbar-nav col-lg-6 justify-content-lg-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acerca_de.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <!-- la etiqueta <ul> define una lista desordenada (con viñetas) -->
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="acerca_de.html">Acerca de</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
       </div>
     </nav>
     <!--BARRA DE NAVEGACION -->
 
-    <!-- IMG -->
-    <div class="contacto" id="section"></div>
-    <!-- IMG -->
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto"></header>
 
-    <!-- CENTER -->
-    <div class="center">
-      <div class="sub_title">
-        Contacto <br />
-        &darr;
-      </div>
+      <main class="px-3">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="sub_title">
+              Contacto <br />
+              &darr;
+            </h1>
+          </div>
+        </div>
+      </main>
+
+      <footer class="mt-auto"></footer>
     </div>
 
-    <br />
-    <br />
+    <div class="espacio-entre"></div>
 
-    <h5 class="inter-tittle">Contacto</h5>
-    <h1 class="title_outer">informaci&oacute;n</h1>
-    <!-- Las etiquetas <h1> a <h6> se utilizan para definir encabezados HTML. -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h5 class="inter-tittle">Contacto</h5>
+        </div>
+        <div class="col-md-12">
+          <h1 class="title_outer">informaci&oacute;n</h1>
+        </div>
+      </div>
 
-    <div class="mail_seccion">
-      <div class="email_texto">
-        <div class="form-group">
-          <input
-            type="text"
-            class="email-bt"
-            placeholder="Nombre"
-            name="Email"
-          />
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input
+              type="text"
+              class="email-bt"
+              placeholder="Nombre"
+              name="Email"
+            />
+          </div>
         </div>
-        <div class="form-group">
-          <input
-            type="text"
-            class="email-bt"
-            placeholder="Email"
-            name="Email"
-          />
+        <div class="col-md-12">
+          <div class="form-group">
+            <input
+              type="text"
+              class="email-bt"
+              placeholder="Email"
+              name="Email"
+            />
+          </div>
         </div>
-        <div class="form-group">
-          <input
-            type="text"
-            class="email-bt"
-            placeholder="Tel&eacute;fono"
-            name="Email"
-          />
+        <div class="col-md-12">
+          <div class="form-group">
+            <input
+              type="text"
+              class="email-bt"
+              placeholder="Tel&eacute;fono"
+              name="Email"
+            />
+          </div>
         </div>
-        <div class="form-group">
-          <textarea
-            class="mensaje-bt"
-            placeholder="Mensaje"
-            rows="5"
-            id="comment"
-            name="Mensaje"
-          ></textarea>
+        <div class="col-md-12">
+          <div class="form-group">
+            <textarea
+              class="mensaje-bt"
+              placeholder="Mensaje"
+              rows="5"
+              id="comment"
+              name="Mensaje"
+            ></textarea>
+          </div>
         </div>
+
         <div class="enviar_btn">
           <button class="enviar_form">Enviar</button>
         </div>
       </div>
     </div>
+    <br />
+
     <!-- CENTER -->
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -5,77 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acerca de</title>
     <link rel="icon" href="imagenes/icon.png" type="image/x-icon" />
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="estilo/style3.css" />
-
     <!-- Multimedia sin derechos de autor
       imagenes: https://unsplash.com/es/fotos/3ZUsNJhi_Ik 
                 https://unsplash.com/es/fotos/nYdD0pb4HZc
       video:    https://www.pexels.com/es-es/video/pareja-coche-vehiculo-adentro-7154209/ 
       -->
   </head>
-  <body>
+  <body class="img-acerca">
     <!--BARRA DE NAVEGACION -->
-    <nav>
-      <!-- <nav> define un conjunto de enlaces de navegación -->
-      <div class="menu">
-        <!-- <div> etiqueta que define una división o una sección en un documento HTML. -->
-        <div class="logo">
-          <a href="#">M/M</a>
-          <!-- <a> es una etiqueta que define un hipervínculo, que se utiliza para enlazar de una página a otra -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">M/M</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarCollapse">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-3 justify-content-lg-center"></div>
+
+          <ul class="navbar-nav col-lg-6 justify-content-lg-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acerca_de.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <!-- la etiqueta <ul> define una lista desordenada (con viñetas) -->
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="acerca_de.html">Acerca de</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
       </div>
     </nav>
     <!--BARRA DE NAVEGACION -->
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto"></header>
 
-    <!-- IMG -->
-    <div class="tienda" id="section"></div>
-    <!-- IMG -->
+      <main class="px-3">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="sub_title">
+              Acerca de nosotros <br />
+              &darr;
+            </h1>
+          </div>
+        </div>
+      </main>
 
-    <!-- CENTER -->
-    <div class="center">
-      <div class="title">Mérida Motors</div>
-      <div class="sub_title">
-        Acerca de nosotros <br />
-        &darr;
+      <footer class="mt-auto"></footer>
+    </div>
+
+    <div class="acerca-texto">
+      <h3 style="text-align: center">Mérida Motors</h3>
+      <p>
+        Somos un concesionario de primer nivel que se enorgullece de ofrecer
+        vehículos nuevos y usados de alta calidad, un excelente servicio al
+        cliente y una experiencia de compra de automóviles sin complicaciones.
+        Nuestro equipo de profesionales de ventas conocedores y amigables está
+        aquí para ayudarlo a encontrar el vehículo perfecto para satisfacer sus
+        necesidades y presupuesto.
+      </p>
+    </div>
+
+    <div class="bgimg-2"></div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h5 class="inter-tittle">Acerca de nosotros</h5>
+        </div>
+        <div class="col-md-12">
+          <h1 class="title_outer">Ofrecemos la mejor atención</h1>
+        </div>
+        <div class="col-md-12">
+          <h4 class="about_us">
+            Ofrecemos una amplia gama de automóviles, camionetas y SUV nuevos y
+            usados de las mejores marcas, incluidas Ford, Acura y más.
+            <br /><br />
+            Además de nuestro extenso inventario, también ofrecemos opciones de
+            financiamiento competitivas y trabajamos con una variedad de
+            prestamistas para ayudarlo a ponerse al volante del automóvil de sus
+            sueños. Nuestro experimentado equipo financiero siempre está
+            disponible para responder sus preguntas y ayudarlo a navegar el
+            proceso de compra de un automóvil.
+            <br /><br />
+            Nos tomamos el tiempo para comprender sus necesidades y trabajar con
+            usted para encontrar el vehículo perfecto que se adapte a su estilo
+            de vida y presupuesto. Ya sea que esté buscando un automóvil nuevo o
+            usado, nuestro concesionario lo tiene cubierto. <br /><br />
+            <br /><br />
+          </h4>
+        </div>
       </div>
     </div>
 
-    <br />
-    <br />
-    <h5 class="inter-tittle">Acerca de nosotros</h5>
-    <h1 class="title_outer">Ofrecemos la mejor atención</h1>
-    <!-- Las etiquetas <h1> a <h6> se utilizan para definir encabezados HTML. -->
-
-    <h4 class="about_us">
-      Somos un concesionario de primer nivel que se enorgullece de ofrecer
-      vehículos nuevos y usados de alta calidad, un excelente servicio al
-      cliente y una experiencia de compra de automóviles sin complicaciones.
-      Nuestro equipo de profesionales de ventas conocedores y amigables está
-      aquí para ayudarlo a encontrar el vehículo perfecto para satisfacer sus
-      necesidades y presupuesto. <br /><br />
-      Ofrecemos una amplia gama de automóviles, camionetas y SUV nuevos y usados
-      de las mejores marcas, incluidas Ford, Acura y más.
-      <br /><br />
-      Además de nuestro extenso inventario, también ofrecemos opciones de
-      financiamiento competitivas y trabajamos con una variedad de prestamistas
-      para ayudarlo a ponerse al volante del automóvil de sus sueños. Nuestro
-      experimentado equipo financiero siempre está disponible para responder sus
-      preguntas y ayudarlo a navegar el proceso de compra de un automóvil.
-      <br /><br />
-      Nos tomamos el tiempo para comprender sus necesidades y trabajar con usted
-      para encontrar el vehículo perfecto que se adapte a su estilo de vida y
-      presupuesto. Ya sea que esté buscando un automóvil nuevo o usado, nuestro
-      concesionario lo tiene cubierto. <br /><br />
-      <br /><br />
-    </h4>
-
     <!-- CENTER -->
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
